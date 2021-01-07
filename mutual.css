@@ -1,5 +1,5 @@
 body {
-    background: #202020;
+    background: #100019;
     margin: 0 auto;
 }
 
@@ -15,20 +15,113 @@ img {
     display: none;
 }
 
+.active {
+    background: #230039;
+}
+
+
+h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    color: #FFEED3;
+    margin-top: 1rem;
+}
+
+/*-----------------------header----------------------------*/
+
 header {
     position: fixed;
-    background: #141414;
+    z-index: 1;
     text-align: center;
     width: 100%;
-    color: white;
-    font-family: 'Kumbh Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+    color: #FFEED3;
+    margin: 0;
+    text-decoration: none;
+}
+
+header p {
+    display: inline-block;
+    color: #FFEED3;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 
-#section_landing {
+/*-----------------------landing----------------------------*/
+
+#background {
+    width: 100%;
     height: 100vh;
+    background-image: url(img/background.svg);
+    background-size: cover;
+    background-position: 90%;
+    text-align: center;
 }
 
-#landing_columns .col {
-    padding: 1vh 0;
+#background_text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#background_text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+#background_text h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFEED3;
+    font-size: 1.2rem;
+    margin: 0 auto 3rem;
+    font-weight: 300;
+}
+
+#background_text a {
+    font-family: 'Roboto', sans-serif;
+    color: #FFEED3;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 2px solid #FFEED3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#background_text a:hover {
+    background: #FFEED3;
+    color: #3A0B50;
+    border: 2px solid #3A0B50;
+}
+
+#down {
+    position: absolute;
+    width: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+}
+
+
+/*-----------------------portfolio----------------------------*/
+
+.col {
+    margin-bottom: 4vh;
+}
+
+.col img {
+    height: auto;
 }
