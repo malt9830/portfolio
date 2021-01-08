@@ -11,8 +11,19 @@ window.onscroll = function () {
 
 function sidenVises() {
     console.log("sidenVises");
+
+    //Burger menu
     document.querySelector("#burger").addEventListener("click", showBurger);
     document.querySelector("#burgerOff").addEventListener("click", hideBurger);
+
+
+    //Banner highlights
+    document.querySelector("#banner_web").addEventListener("mouseover", highlightWeb);
+    document.querySelector("#banner_ux").addEventListener("mouseover", highlightUX);
+    document.querySelector("#banner_animation").addEventListener("mouseover", highlightAnimation);
+    document.querySelector("#banner_content").addEventListener("mouseover", highlightContent);
+
+    document.querySelector("#banners").addEventListener("mouseout", removeHighlight);
 }
 
 function showBurger() {
@@ -35,4 +46,42 @@ function hideBurger() {
     if (window.scrollY < 75) {
         document.querySelector("#header").classList.remove("active");
     }
+}
+
+function highlightWeb() {
+    console.log("highlightWeb");
+    document.querySelector("#banner_ux").classList.add("grey");
+    document.querySelector("#banner_animation").classList.add("grey");
+    document.querySelector("#banner_content").classList.add("grey");
+}
+
+function highlightUX() {
+    console.log("highlightUX");
+    document.querySelector("#banner_web").classList.add("grey");
+    document.querySelector("#banner_animation").classList.add("grey");
+    document.querySelector("#banner_content").classList.add("grey");
+}
+
+function highlightAnimation() {
+    console.log("highlightAnimation");
+    document.querySelector("#banner_web").classList.add("grey");
+    document.querySelector("#banner_ux").classList.add("grey");
+    document.querySelector("#banner_content").classList.add("grey");
+}
+
+function highlightContent() {
+    console.log("highlightContent");
+    document.querySelector("#banner_web").classList.add("grey");
+    document.querySelector("#banner_ux").classList.add("grey");
+    document.querySelector("#banner_animation").classList.add("grey");
+}
+
+function removeHighlight() {
+    console.log("removeHighlight");
+
+    document.querySelector("#banner_web").classList.remove("grey");
+    document.querySelector("#banner_ux").classList.remove("grey");
+    document.querySelector("#banner_animation").classList.remove("grey");
+    document.querySelector("#banner_content").classList.remove("grey");
+
 }
