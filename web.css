@@ -1,0 +1,25 @@
+@media (min-width:700px) {
+    .col_buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button_left {
+        margin-right: 1rem;
+    }
+
+    .button_right {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col {
+        margin: 1rem;
+    }
+}
