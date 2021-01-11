@@ -1,0 +1,10 @@
+@media (min-width:1000px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col {
+        margin: 1rem;
+    }
+}
