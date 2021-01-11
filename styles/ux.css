@@ -1,0 +1,56 @@
+.row_banners {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.col_banner {
+    display: inline-block;
+    width: 70vw;
+}
+
+@media (min-width:600px) {
+    .row_banners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .col_banner {
+        margin: 1rem;
+        width: auto;
+    }
+}
+
+@media (min-width:1000px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col {
+        margin: 1rem;
+    }
+
+    #section_concept .row {
+        grid-template-columns: 67% 33%;
+    }
+
+    #button_survey_desktop {
+        display: block;
+    }
+
+    #button_survey_mobile {
+        display: none;
+    }
+
+    .row_banners {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .padding {
+        padding: 0 1rem;
+    }
+}

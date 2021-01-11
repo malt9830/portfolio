@@ -39,6 +39,7 @@ section a {
     display: block;
     text-align: center;
     margin: 1rem auto;
+    background: #100019;
 }
 
 section a:hover {

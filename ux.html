@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="mutual.css">
+    <link rel="stylesheet" href="styles/mutual.css">
+    <link rel="stylesheet" href="styles/subpage.css">
+    <link rel="stylesheet" href="styles/ux.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header" class="active">
+    <header id="header">
         <nav>
             <a id="title" href="index.html">PORTFOLIO</a>
             <p id="burger">☰</p>
@@ -39,6 +41,70 @@
         </div>
     </header>
     <main>
+        <h1>UX</h1>
+        <hr>
+        <h3>Under UX-forløbet lærte vi om adskillige research-metoder, idet vi lavede en XD-prototype og løbende opdaterede den på baggrund af brugerdannede indsigter.</h3>
+        <section id="section_research">
+            <div class="section_wrapper">
+                <div class="row">
+                    <div class="col">
+                        <h2>Research</h2>
+                        <p>Temaets projekt var en XD-prototype af en t-shirt-webshop inspireret af indsigter dannet af køberes tendenser ift. shopping online såvel som i fysiske butikker.</p>
+                        <p>Gennem 4 forskellige research-typer – desk, observation, interview og survey – dannede jeg fra hver 10 indsigter omhandlende shopping-vaner. De i alt 40 indsigter, hvoraf mange var gentagne, grupperede jeg efterfølgende i kategorier for at danne et overblik og de mest prævalente vaner og normer.</p>
+                        <p>Den mest indsigtsfulde metode – for mit vedkommende – var survey - bl.a. fordi den gav kvantitativt og lettere analyserbart data.</p>
+                        <a id="button_survey_desktop" class="hidden" href="http://malthekusk.one/kea/03_ux/03_01_04_survey_resarch_MaltheKuskLauritsen.pdf">SE SURVEY</a>
+                    </div>
+                    <div class="col">
+                        <img src="img/img_ux/research.png" alt="cirkeldiagrammer fra researachdata">
+                        <a id="button_survey_mobile" href="http://malthekusk.one/kea/03_ux/03_01_04_survey_resarch_MaltheKuskLauritsen.pdf">SE SURVEY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_concept">
+            <div class="section_wrapper">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/img_ux/3dviewer.jpg" alt="tidlig skecth af 3D-viewer">
+                    </div>
+                    <div class="col">
+                        <h2>Idé og koncept</h2>
+                        <p>På baggrund af researchens grupperede indsigter og fællesnævnere udarbejdede jeg koncepter og elementer jeg ville inddrage i idéen til webshoppen.</p>
+                        <p>Blandt andet i forhold til den online mangel på feel-touch-try, hvilket var meget efterlyst i surveyen, valgte jeg at implementere en 3D product viewer for at bringe produktet tættere på online-køberen.</p>
+                        <p>Derudover var det generelle koncept for shoppen ikke bare en online shop, men mere en form for <i>social media</i>-fællesskab primært baseret på shoppens t-shirt designer, hvilken brugerne kunne bruge til at lave og dele deres egne designs.</p>
+                        <a href="http://malthekusk.one/kea/03_ux/03_01_05_ide_MaltheKuskLauritsen.pdf">SE IDÉ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_prototype">
+            <div class="section_wrapper">
+                <div class="padding">
+                    <h2>Prototype</h2>
+                    <p>Følgende research om køberes shoppingvaner samt idéen og konceptet baseret derpå, udarbejdedes der en prototype i Adobe XD via XD's indbyggede transitions og UI-kits, hvilke kunne downloades og som gjorde det let at gøre prototypen hifi. Prototypen valgte jeg at lave i mobilversion, da det er folks primære platform for online-shopping.</p>
+                    <p>For selve prototypen, fungerede survey-data som det primære basis for både indholdet og designet af hjemmesiden, således de mest prioriterede elementer fra surveyen blev inkluderet. Dertil genererede jeg, baseret på undervisningen derom, copy, micro-copy og call-to-action-knapper samt headings til sitet.</p>
+                    <p>Efter inkorporeringen af text og stil i prototypen, så prototypen var i testbar tilstand, fik jeg 3 personer til at teste prototypen igennem Five Act-interviews, hvilket indebar at uddelegere tasks til personer og derefter observere dem i deres forsøg på at udføre dem. Tasksne jeg valgte var fokuseret på de områder, jeg selv følte kunne forekomme besværlige ift. navigationen med det formål at forbedre prototypen derpå.</p>
+                    <p>Efter rettelserne fra Five Act-interviewet, var prototypen færdig og således klar til selve pitchen, hvilken vi i grupper præsenterede for hinanden.</p>
+                </div>
+                <div class="row_banners">
+                    <div class="col_banner">
+                        <img src="img/img_ux/banner1.jpg" alt="prototype landing page">
+                    </div>
+                    <div class="col_banner">
+                        <img src="img/img_ux/banner2.jpg" alt="prototype product page">
+                    </div>
+                    <div class="col_banner">
+                        <img src="img/img_ux/banner3.jpg" alt="prototype 3d model viewer">
+                    </div>
+                    <div class="col_banner">
+                        <img src="img/img_ux/banner4.jpg" alt="prototype landing bottom">
+                    </div>
+                </div>
+                <div class="padding">
+                    <a href="https://xd.adobe.com/view/4e4f7784-da07-4a8b-8347-6fb8764f5ace-1b1c/">SE PROTOTYPE</a>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
