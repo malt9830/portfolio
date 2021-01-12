@@ -1,0 +1,11 @@
+@media (min-width:1000px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 30% 70%;
+    }
+
+    .col {
+        margin: 1rem;
+    }
+}

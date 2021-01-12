@@ -31,8 +31,8 @@ img {
     background: #230039;
 }
 
-.grey {
-    filter: grayscale(100%);
+.fade {
+    filter: opacity(20%);
 }
 
 h1 {
