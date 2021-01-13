@@ -1,7 +1,41 @@
+main {
+    margin: 0 5vw;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+#section_banners {
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+#section_banners .col {
+    margin: 0 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFEED3;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFEED3;
+    line-height: 1.3rem;
+    text-align: justify;
+}
+
 @media (min-width:1000px) {
     .row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-columns: 30% 70%;
     }
 
